@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-regular.woff2') format('woff2'),
+         url('../fonts/plus-jakarta-sans-v3-latin-regular.woff') format('woff');
+}
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff2') format('woff2'), 
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff') format('woff');
+  }
+ 
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-600.woff2') format('woff2'), 
+         url('../fonts/plus-jakarta-sans-v3-latin-600.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'),
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'); 
+  }
+
+
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+}
+img{
+    vertical-align: middle;
+}
+
+.container{
+    padding: 12px 24px;
+    margin: 0 auto;
+    width: 1264px;
+}
+.header{
+    left: 0%;
+    right: 0%;    
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #EEEEF4;
+    background-color: #FFFFFF;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.header-list{
+    padding: 0%;
+    margin-left: 50px;
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;
+}
+.header-link{
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   color: #101010;
+}
+.header-link:hover{
+   color: #1AAB7B;
+}
+.header-link:active{
+    opacity: 0.6;
+}
+.header-logo:hover{
+    opacity: 0.8;
+}
+.header-logo:active{
+    opacity: 0.6;
+}
+.header-contact{
+    text-decoration: none;
+    margin-left: 525px;
+    padding: 12px 24px;
+    background: #101010;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+.header-contact:hover{
+    color: #1AAB7B;
+    background: #FFFFFF;
+    border: 1px solid  #1AAB7B;
+    border-radius: 6px;
+}
+.header-contact:active{
+    color: #FFFFFF;
+    opacity: 0.6;
+    background: #101010;
+    border: 1px solid transparent;
+}
+
+.link{
+    transition: all 0.4s ease;
+}
+/* BUSINESS */
+
+.business{
+    position: relative;
+    top: 90px;
+}
+
+.business-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 92px;
+    padding-bottom: 176px;
+}
+.business-inner{
+    width: 550px;
+}
+.business-title{
+    margin: 0%;
+    padding: 0%;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 140%;
+    color: #101010;
+}
+.business-text{
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+.iframe{
+    border-radius: 6px;
+}
+.business-link{
+    text-decoration: none;
+    background: #1AAB7B;
+    border-radius: 6px;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1.5px solid transparent;
+}
+.business-link:hover{
+    background-color: #FFFFFF;
+    color: #1AAB7B;
+    border: 1.5px solid #1AAB7B;
+}
+.business-link:active{
+    background: #1AAB7B;
+    opacity: 0.7;
+    color: #FFFFFF;
+    border: 1.5px solid transparent;
+}
+
+/* BUSINESS */
+
+/* SUPPORT */
+
+.support{
+    top: 90px;
+    position: relative;
+    background-color: #F2F4F6;
+}
+.support-box{
+    padding-top: 0%;
+    padding-bottom: 50px;
+    margin: 0%;
+}
+.support-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #101010;
+}
+.support-list{
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+    list-style-type: none;
+}
+.support-item{
+    position: relative;
+    border: 2px solid #E1E7ED;
+    border-radius: 6px;
+    padding: 40px 30px;
+    width: 384px;
+}
+.support-item:hover{
+    color: #FFFFFF;
+    background-color: #1AAB7B;
+    transition: all 0.6s ease;
+}
+.support-item::after{
+    top: 40px;
+    right: 30px;
+    position: absolute;
+    background-image: url(../images/support/logo1.png);
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    
+}
+ .support-name{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+}    
+.support-name:hover{
+    color: #FFFFFF;
+}
+.support-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+.support-text:hover{
+    color: #FFFFFF;
+}
+.support-link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+}
+.support-link:hover{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+/* SUPPORT */
+
+/* WORK */
+
+.work{
+    position: relative;
+    top: 90px;
+}
+
+.work-box{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.work-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #101010;
+}
+.work-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #636F87;
+}
+.work-list{
+    list-style-type: none;
+    margin-top: 90px;
+    padding: 0%;
+  }
+.work-item{
+    column-gap: 32px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.work-pic{
+    width: 488px;
+    height: 390px;
+}
+.work-info{
+    width: 488px;
+}
+.info-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #101010;
+}
+.work-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+.work-item:nth-child(2){
+  flex-direction: row-reverse;
+}
+.info{
+    width: 592px;
+}
+/* WORK */
+
+/* REGISTRATION */
+
+.registration{
+   position: relative;
+   top: 90px;
+}
+.registration-box{
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.registration-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #101010;
+}
+.registration-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #636F87;
+}
+.registration-form{
+
+    background: #F2F4F6;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: 1008px;
+    height: 515px;
+}
+
+
+
+/* REGISTRATION */
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    top: 290px;
+    background-color: #000000;
+    
+}
+.footer-list{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    
+}
+.footer-fox{
+    padding: 0%;
+    
+}
+.footer-item{
+    flex-basis: 280px;
+    row-gap: 30px;
+}
+.footer-item:nth-child(2){
+    padding: 0%;
+    flex-grow: 1;
+  
+}
+.footer-item:nth-child(3){
+    padding: 0%;
+    flex-grow: 2;
+}
+
+
+.platform-box{
+    padding: 0%;
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+}
+
+strong{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    
+}
+.fox-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A1A8B7;
+    margin: 30px 0px;
+}
+.fox-link:hover{
+    color: #1AAB7B;
+}
+.fox-link:active{
+    color: #1AAB7B;
+    opacity: 0.8;  
+}
+.fox-adress{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A1A8B7;
+}
+
+.footer-foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+small{
+    color: #FFFFFF;
+}
+/* FOOTER */
